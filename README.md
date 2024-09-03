@@ -35,8 +35,6 @@ If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as 
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Citation](#citation)
 - [Required Equipment and Software Setup](#required-equipment-and-software-setup)
   - [Explanation of Computer and Hardware Requirements](#explanation-of-computer-and-hardware-requirements)
   - [Software Installation and Dependencies: CasADi and ROS](#software-installation-and-dependencies-casadi-and-ros)
