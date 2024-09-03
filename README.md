@@ -4,7 +4,7 @@ Welcome to **NMPC_Flash_Multi_Obstacle**, where we solve your complex navigation
 
 Constact here if you have any questions [contact](https://www.linkedin.com/in/lara-laban-571804212/).
 
-Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [video](https://youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO&feature=shared).
+Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
 
 ## 0. Required Equipment and Software Setup
 
