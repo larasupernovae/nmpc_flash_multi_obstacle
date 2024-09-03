@@ -549,7 +549,7 @@ if trajectory_type == "step_z":
 
 The images are omitted however the concept is fairly similar to the previous ones. 
 
-## NMPC: Simulation and Simulator Tests with STATICAL OBSTACLES
+## NMPC: Simulation and Simulator Tests with STATIC OBSTACLES
 
 ### One Obstacle
 
@@ -653,7 +653,7 @@ python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACL
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/rviz_multi_velocity.png)
 
 
-## NMPC: Simulation and Simulator Tests with DYNAMICAL OBSTACLES - working at the moment...
+## NMPC: Simulation and Simulator Tests with DYNAMIC OBSTACLES - working at the moment...
 
 
 ## License
