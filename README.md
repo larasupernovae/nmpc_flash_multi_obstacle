@@ -343,11 +343,11 @@ rosrun rviz rviz -d ./granso.rviz
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/rviz_sinusoida.png)
 
 ```bash
-python3 pycontroller.py --trajectory_type go_to_point __ns:=/dji1 -x 3.0 -y 2.0 -z 2.8
+python3 pycontroller.py --trajectory_type go_to_point __ns:=/dji1 -x 3.0 -y 2.0 -z 2.5
 ```
 
 ```bash
-python3 pycontroller.py --trajectory_type circle_xy --controller FLASH __ns:=/dji1 --speed 1.35
+python3 pycontroller.py --trajectory_type circle_xy --controller FLASH __ns:=/dji1 --speed 0.65
 ```
 
 Visualize in Rviz:
@@ -575,7 +575,7 @@ python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACL
 However, when we realise the velocities the UAV flies around the spheres making it obvious that the obstacle was avoided, while adjusting the speed in real time.
 
 ```bash
-python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACLES --obstacle MULTI_OBSTACLES __ns:=/dji1 --speed 2.25
+python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACLES --obstacle MULTI_OBSTACLES __ns:=/dji1 --speed 2.35
 ```
 
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/rviz_multi_velocity.png)
