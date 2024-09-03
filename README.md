@@ -12,6 +12,10 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/third.gif" alt="Third GIF" width="400" style="margin-right: 10px;" />
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fourth.gif" alt="Fourth GIF" width="400" />
 </p>
+<p align="center">
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fifth.gif" alt="Fifth GIF" width="400" style="margin-right: 10px;" />
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/sixth.gif" alt="Sixth GIF" width="400" />
+</p>
 
 **Videos** Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
 
