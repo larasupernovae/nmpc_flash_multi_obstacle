@@ -100,7 +100,7 @@ sudo make install
 sudo pip3 install casadi
 ```
 
-(I am going to level with you here the installation is a bit more sinister then this, I only remember that if you want to use ma27 or ma97 (instead of mumps) you need to visit [HSL](https://licences.stfc.ac.uk/product/coin-hsl/) --- this is my reccomendation for hard problems --- dont get discouraged if its a hard to link
+(I am going to level with you here the installation is a bit more sinister then this, I only remember that if you want to use ma27 or ma97 (instead of mumps) you need to visit [Coin-HSL](https://licences.stfc.ac.uk/product/coin-hsl/) --- this is my reccomendation for hard problems --- dont get discouraged if its a hard to link
 I think its something about a library being misspelled (libcoinhsl.so) and not changed in the documentation. - best of luck)
 
 ```bash
