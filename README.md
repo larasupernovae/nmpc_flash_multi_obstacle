@@ -6,7 +6,7 @@ Constact here if you have any questions [contact](https://www.linkedin.com/in/la
 
 Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
 
-![Example GIF](src/images_for_README/example.gif)
+![Example GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/example.gif)
 
 ## 0. Required Equipment and Software Setup
 
