@@ -7,7 +7,7 @@ Constact here if you have any questions [contact](https://www.linkedin.com/in/la
 Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
 
 <p align="center">
-  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/first.gif" alt="First GIF" width="400" style="margin-right: 10px;" />
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/granso_first.gif" alt="First GIF" width="400" style="margin-right: 10px;" />
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/second.gif" alt="Second GIF" width="400" style="margin-right: 10px;" />
 </p>
 <p align="center">
