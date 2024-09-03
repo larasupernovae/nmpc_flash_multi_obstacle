@@ -8,7 +8,7 @@ Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. 
 
 <p align="center">
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/granso_first.gif" alt="First GIF" width="400" style="margin-right: 10px;" />
-  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/second.gif" alt="Second GIF" width="400" style="margin-right: 10px;" />
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/granso_second.gif" alt="Second GIF" width="400" style="margin-right: 10px;" />
 </p>
 <p align="center">
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/third.gif" alt="Third GIF" width="400" style="margin-right: 10px;" />
