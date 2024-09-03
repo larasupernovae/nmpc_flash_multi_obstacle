@@ -100,7 +100,7 @@ sudo make install
 sudo pip3 install casadi
 ```
 
-(I am going to level with you here the installation is a bit more sinister then this, I only remember that if you want to use ma27 or ma97 (instead of mumps) you need to visit [HSL](https://licences.stfc.ac.uk/product/coin-hs) --- this is my reccomendation for hard problems --- dont get discouraged if its a hard to link
+(I am going to level with you here the installation is a bit more sinister then this, I only remember that if you want to use ma27 or ma97 (instead of mumps) you need to visit [HSL](https://licences.stfc.ac.uk/product/coin-hsl/) --- this is my reccomendation for hard problems --- dont get discouraged if its a hard to link
 I think its something about a library being misspelled (libcoinhsl.so) and not changed in the documentation. - best of luck)
 
 ```bash
@@ -117,7 +117,7 @@ sudo ln -s libcoinhsl.so libhsl.so
 
 Install DJI SDK: Download and install the DJI Onboard SDK, which provides the necessary libraries and tools to interface with the Matrice 100. Follow the [DJI SDK documentation](https://developer.dji.com/mobile-sdk/documentation/introduction/index.html).
 
-Set Up ROS Nodes: Implement ROS nodes to handle communication between the NMPC controller and the UAV. This involves publishing control commands and subscribing to telemetry data. [ROS Wikia](http://wiki.ros.org/dji_sdk)  
+Set Up ROS Nodes: Implement ROS nodes to handle communication between the NMPC controller and the UAV. This involves publishing control commands and subscribing to telemetry data. [ROS Wiki](http://wiki.ros.org/dji_sdk)  
 
 Configuration: Configure the launch files to ensure the correct initialization of parameters for the Matrice 100. This includes setting up topics for receiving GPS data, IMU readings, and other necessary inputs for the NMPC algorithm.
 
