@@ -218,7 +218,7 @@ class MPCController:
                 q_x, q_y, q_z = 1.0, 2.0, 2.0 
             
         if trajectory_type == "circle_xy":
-            self.radius = 1.2
+            self.radius = 3.2
             self.k = 0.76  # Lift constant  # The more it goes up the lower the thrust
             q_x, q_y, q_z = 1.0, 2.0, 2.0 # 1.0, 1.0, 4.0 # Increased positional weights    
             if use_nmpc==True:

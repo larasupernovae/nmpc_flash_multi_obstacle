@@ -331,7 +331,7 @@ python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/
 ```
 
 ```bash
-python3 pycontroller.py --trajectory_type sinusoidal --controller FLASH __ns:=/dji1 --speed 0.65
+python3 pycontroller.py --trajectory_type sinusoidal --controller FLASH __ns:=/dji1 --speed 0.95
 ```
 
 Visualize in Rviz:
@@ -343,11 +343,11 @@ rosrun rviz rviz -d ./granso.rviz
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/rviz_sinusoida.png)
 
 ```bash
-python3 pycontroller.py --trajectory_type go_to_point __ns:=/dji1
+python3 pycontroller.py --trajectory_type go_to_point __ns:=/dji1 -x 3.0 -y 2.0 -z 2.8
 ```
 
 ```bash
-python3 pycontroller.py --trajectory_type circle_xy --controller FLASH __ns:=/dji1 --speed 0.65
+python3 pycontroller.py --trajectory_type circle_xy --controller FLASH __ns:=/dji1 --speed 1.35
 ```
 
 Visualize in Rviz:
@@ -412,8 +412,10 @@ python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/
 ```
 
 ```bash
-python3 pycontroller.py --trajectory_type hexagon --controller FLASH __ns:=/dji1
+python3 pycontroller.py --trajectory_type hexagon --controller FLASH __ns:=/dji1 --speed 1.25
 ```
+
+Here, you can adjust the UAV's speed between 1.25 and 1.75 (aka switch the --speed 1.25 command). As the speed increases (closer to 1.75), the UAV's path will resemble a circle more closely. Conversely, as the speed decreases (closer to 1.25), the UAV will more accurately follow the hexagonal shape.
 
 Visualize in Rviz:
 
@@ -428,7 +430,7 @@ python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/
 ```
 
 ```bash
-python3 pycontroller.py --trajectory_type rectangle --controller FLASH __ns:=/dji1
+python3 pycontroller.py --trajectory_type rectangle --controller FLASH __ns:=/dji1 
 ```
 
 Visualize in Rviz:
