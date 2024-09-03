@@ -1,6 +1,10 @@
 # NMPC_Flash_Multi_Obstacle
 
-Welcome to NMPC_Flash_Multi_Obstacle, where we solve your complex navigation problems custom made for DJI and other black box UAVs. Our Nonlinear Model Predictive Control (NMPC) framework is designed to handle multi-obstacle environments it kind of worked for us, my wish was also that it works for you.
+Welcome to **NMPC_Flash_Multi_Obstacle**, where we solve your complex navigation problems custom made for DJI and other black box UAVs. Our Nonlinear Model Predictive Control (NMPC) framework is designed to handle multi-obstacle environments it kind of worked for us, hopefully it does for you too. Oh yeah, its supposed to be easy integration for a big UAV, let hope it is!
+
+Constact here if you have any questions [contact](https://www.linkedin.com/in/lara-laban-571804212/).
+
+Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [video] (https://youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO&feature=shared).
 
 ## 0. Required Equipment and Software Setup
 
