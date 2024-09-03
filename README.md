@@ -214,7 +214,7 @@ If you wish to go to a specific point, the default on is [0, 0, 1], with the fol
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/tacka_1.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/tacka_1.png)
 
 Example of setting the speed and fly to point: (note to self: B-splines solve the issue of having only two points adjust your k for smoothnes
 based on how many you have):
@@ -225,7 +225,7 @@ Example of going to the following point -x 1.5 -y 1.6 -z 3.6 and the speed to 0.
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1 -x 1.5 -y 1.6 -z 3.6 --speed 0.85
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/tacka_2.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/tacka_2.png)
 
 (Here we can note that we had an overshoot and the speed was to much for such the UAV, if we use the same command as previously to return:)
 
@@ -233,7 +233,7 @@ python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/tacka_3.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/tacka_3.png)
 
 (we can note that the overshoot is much smaller, given this we can conclude that 0.35 is the optimal constant speed we need. Remember I am still demonstrating the position controller here only, in the obstacle section we will play around with adjusting the speed)
 
@@ -245,7 +245,7 @@ rosrun rviz rviz -d ./granso.rviz
 
 Also if your command line is something like this you are on the right track:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/tacka_4.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/tacka_4.png)
 
 ### 10.2. Testing out the spline/circle_xy/sinusoidal trajectories
 
@@ -287,15 +287,15 @@ python3 py_nmpc_dji100_FLASH.py --trajectory_type spline --use_nmpc
 
 3D visualization of the actual vs desired trajectory:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/spline_1.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/spline_1.png)
 
 Control Inputs: Thrust [%], Roll [rad], Pitch [rad], Yaw Rate [rad/s]:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/spline_2.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/spline_2.png)
 
 States: x, y, z, phi, theta, psi, xdot, ydot, zdot, psidot:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/spline_3.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/spline_3.png)
 
 All simulations will present the same 3 Figures, 3D path, control inputs and states, we have ommited further Images due to clarity.
 
@@ -303,13 +303,13 @@ All simulations will present the same 3 Figures, 3D path, control inputs and sta
 python3 py_nmpc_dji100_FLASH.py --trajectory_type sinusoidal --use_nmpc 
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/sinusoidal_simulation_picture.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/sinusoidal_simulation_picture.png)
 
 ```bash
 python3 py_nmpc_dji100_FLASH.py --trajectory_type circle_xy --use_nmpc 
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/circle_simulation_picture.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/circle_simulation_picture.png)
 
 #### 10.2.2. DJI Simulator testings
 
@@ -343,7 +343,7 @@ Visualize in Rviz:
 rosrun rviz rviz -d ./granso.rviz
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_spline.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_spline.png)
 
 ```bash
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1 -x 0.0 -y 0.0 -z 3.0
@@ -359,7 +359,7 @@ Visualize in Rviz:
 rosrun rviz rviz -d ./granso.rviz
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_sinusoida.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_sinusoida.png)
 
 ```bash
 python3 pycontroller.py --trajectory_type go_to_point __ns:=/dji1
@@ -375,7 +375,7 @@ Visualize in Rviz:
 rosrun rviz rviz -d ./granso.rviz
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/circle_dji_picture.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/circle_dji_picture.png)
 
 ### 10.3. Testing out the rectangle/hexagon trajectories
 
@@ -405,15 +405,15 @@ python3 py_nmpc_dji100_FLASH.py --trajectory_type hexagon --use_nmpc
 ```
 3D visualization of the actual vs desired trajectory:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/hexagon_1.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/hexagon_1.png)
 
 Control Inputs: Thrust [%], Roll [rad], Pitch [rad], Yaw Rate [rad/s]:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/hexagon_2.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/hexagon_2.png)
 
 States: x, y, z, phi, theta, psi, xdot, ydot, zdot, psidot:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/hexagon_3.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/hexagon_3.png)
 
 You will notice we used offsets in the code this concept was utilized to move the hexagon and other shapes and adjustem in our limited Vicon space.
 
@@ -421,7 +421,7 @@ You will notice we used offsets in the code this concept was utilized to move th
 python3 py_nmpc_dji100_FLASH.py --trajectory_type rectangle --use_nmpc 
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/recatngle_picture.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/recatngle_picture.png)
 
 
 #### 10.3.2. DJI Simulator testings
@@ -440,7 +440,7 @@ Visualize in Rviz:
 rosrun rviz rviz -d ./granso.rviz
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/dji_hexagon_picture.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/dji_hexagon_picture.png)
 
 ```bash
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1 -x 0.0 -y 0.0 -z 3.0
@@ -456,7 +456,7 @@ Visualize in Rviz:
 rosrun rviz rviz -d ./granso.rviz
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/dji_recatngle_picture.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/dji_recatngle_picture.png)
 
 ### 10.4. Testing out the step_xyz/line_xy/step_z trajectories
 
@@ -505,7 +505,7 @@ In the following section we have the position and velocity controller and the di
 ```bash
 python3 py_nmpc_dji100_OBSTACLE.py --trajectory_type spline --use_nmpc
 ```
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/one_obstacle.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/one_obstacle.png)
 
 #### 11.1.2. DJI Simulator testings
 
@@ -519,7 +519,7 @@ q_vx, q_vy, q_vz = 0.5, 0.5, 8.5  # FOCUS ON POSITION
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1 -x 18.0 -y 5.0 -z 8.0 --speed 0.5
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_one_prep.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_one_prep.png)
 
 #### 11.1.3 Focus on Position Controller / Constant Velocity
 
@@ -527,7 +527,7 @@ python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/
 python3 pycontroller.py --trajectory_type spline --controller OBSTACLE --obstacle OBSTACLE __ns:=/dji1 --speed 0.75
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_one_position.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_one_position.png)
 
 #### 11.1.4. Focus on Velocity Controller
 
@@ -535,7 +535,7 @@ python3 pycontroller.py --trajectory_type spline --controller OBSTACLE --obstacl
 python3 pycontroller.py --trajectory_type spline --controller OBSTACLE --obstacle OBSTACLE __ns:=/dji1 --speed 0.75
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_one_velocity.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_one_velocity.png)
 
 
 ### 11.2. Multiple Obstacles
@@ -550,16 +550,16 @@ python3 py_nmpc_dji100_MULTI_OBSTACLES.py --trajectory_type long_spline --use_nm
 
 3D visualization of the actual vs desired trajectory:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/obstacles_1.png)
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/obstacles_1a.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/obstacles_1.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/obstacles_1a.png)
 
 Control Inputs: Thrust [%], Roll [rad], Pitch [rad], Yaw Rate [rad/s]:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/obstacles_2.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/obstacles_2.png)
 
 States: x, y, z, phi, theta, psi, xdot, ydot, zdot, psidot:
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/obstacles_3.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/obstacles_3.png)
 
 
 #### 11.2.2. DJI Simulator testings
@@ -575,7 +575,7 @@ q_vx, q_vy, q_vz = 4.5, 4.5, 8.5 # FOCUS ON VELOCITY
 python3 pycontroller.py --trajectory_type go_to_point --controller FLASH __ns:=/dji1 -x 18.0 -y 5.0 -z 8.0 --speed 0.75
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_multi_prep.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_multi_prep.png)
 
 #### 11.2.3 Focus on Position Controller / Constant Velocity
 
@@ -585,7 +585,7 @@ Here we observe that there is a time limit on the positions, the UAV realises it
 python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACLES --obstacle MULTI_OBSTACLES __ns:=/dji1 --speed 1.65
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_multi_position.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_multi_position.png)
 
 #### 11.2.4. Focus on Velocity Controller
 
@@ -595,13 +595,13 @@ However, when we realise the velocities the UAV flies around the spheres making 
 python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACLES --obstacle MULTI_OBSTACLES __ns:=/dji1 --speed 2.25
 ```
 
-![Alt text](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/src/images_for_README/rviz_multi_velocity.png)
+![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/src/images_for_README/rviz_multi_velocity.png)
 
 
 ## 12. NMPC: Simulation and Simulator Tests with DYNAMICAL OBSTACLES - working at the moment...
 
 
 ## 13. License
-This project is licensed under the MIT License. You can view the full license [here](https://gitlab.liu.se/lrs/lrs_fly_with_vicon/-/raw/main/LICENSE.txt).
+This project is licensed under the MIT License. You can view the full license [here](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/-/raw/main/LICENSE.txt).
 
 For more information about the MIT License, you can visit the [Open Source Initiative](https://opensource.org/licenses/MIT) website. 
