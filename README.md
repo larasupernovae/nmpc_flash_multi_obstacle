@@ -15,9 +15,6 @@ Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. 
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fourth.gif" alt="Fourth GIF" width="200" />
 </p>
 
-| ![First GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/first.gif) | ![Second GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/second.gif) | ![Third GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/third.gif) | ![Fourth GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fourth.gif) |
-|:---:|:---:|:---:|:---:|
-
 ## 0. Required Equipment and Software Setup
 
 ### 0.1. Explanation of Computer and Hardware Requirements
