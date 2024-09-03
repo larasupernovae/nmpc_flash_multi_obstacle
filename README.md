@@ -1,10 +1,8 @@
 # NMPC_Flash_Multi_Obstacle
 
-Welcome to **NMPC_Flash_Multi_Obstacle**, a robust framework for Nonlinear Model Predictive Control (NMPC) tailored for autonomous navigation of DJI Matrice 100 and other UAVs equipped with similar black-box systems, best of luck!
+Welcome to **NMPC_Flash_Multi_Obstacle**: a robust framework for Nonlinear Model Predictive Control (NMPC) tailored for autonomous navigation of DJI Matrice 100 and other UAVs equipped with similar black-box systems. Central to this framework is its real-time optimization capability, enabled by the CasADi library and ROS topics and nodes, which efficiently solves the NMPC problem under tight computational constraints. This allows for adaptive and agile navigation even in dynamic environments. Our approach supports a wide range of trajectory types and obstacle configurations, ensuring flexibility and robustness in various testing scenarios.
 
 Constact here if you have any questions [contact](https://www.linkedin.com/in/lara-laban-571804212/).
-
-Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
 
 <p align="center">
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/granso_first.gif" alt="First GIF" width="400" style="margin-right: 10px;" />
@@ -15,7 +13,23 @@ Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. 
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fourth.gif" alt="Fourth GIF" width="400" />
 </p>
 
-**Authors** Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
+Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
+
+**Authors**: Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
+
+If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
+
+ - [Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, Björn Olofsson, Yiannis Karayiannidis, Rolf Johansson, IEEE International Conference on Robotics and Automation (ICRA) 2025
+
+```bash
+@inproceedings{TBA,
+  title={Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments},
+  author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy and Olofsson, Björn and Karayiannidis, Yiannis and Johansson, Rolf},
+  booktitle={Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2025},
+  status={TBA}
+}
+```
 
 ## 0. Required Equipment and Software Setup
 
