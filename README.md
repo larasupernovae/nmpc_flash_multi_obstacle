@@ -1,4 +1,6 @@
-# Public Repository for ICRA 2024 Paper - UAV NMPC Implementation
+# NMPC_Flash_Multi_Obstacle
+
+Welcome to NMPC_Flash_Multi_Obstacle, where we solve your complex navigation problems custom made for DJI and other black box UAVs. Our Nonlinear Model Predictive Control (NMPC) framework is designed to handle multi-obstacle environments it kind of worked for us, my wish was also that it works for you.
 
 ## 0. Required Equipment and Software Setup
 
