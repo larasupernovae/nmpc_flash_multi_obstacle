@@ -9,11 +9,14 @@ Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. 
 ![Example GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/example.gif)
 
 <p align="center">
-  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/first.gif" alt="First GIF" width="200" />
-  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/second.gif" alt="Second GIF" width="200" />
-  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/third.gif" alt="Third GIF" width="200" />
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/first.gif" alt="First GIF" width="200" style="margin-right: 10px;" />
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/second.gif" alt="Second GIF" width="200" style="margin-right: 10px;" />
+</p>
+<p align="center">
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/third.gif" alt="Third GIF" width="200" style="margin-right: 10px;" />
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fourth.gif" alt="Fourth GIF" width="200" />
 </p>
+
 
 ## 0. Required Equipment and Software Setup
 
