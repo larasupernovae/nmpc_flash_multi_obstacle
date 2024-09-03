@@ -15,6 +15,8 @@ Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. 
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/fourth.gif" alt="Fourth GIF" width="400" />
 </p>
 
+**Authors** Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
+
 ## 0. Required Equipment and Software Setup
 
 ### 0.1. Explanation of Computer and Hardware Requirements
