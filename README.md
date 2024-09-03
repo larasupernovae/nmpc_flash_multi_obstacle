@@ -8,6 +8,8 @@ Here is our demo in real life playlist testings done at Gränsö Slott, Sweden. 
 
 ![Example GIF](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/example.gif)
 
+![Example GIF aaa](https://giphy.com/gifs/season-15-the-simpsons-15x9-xT5LMMHHAsW6gFyBXy)
+
 ## 0. Required Equipment and Software Setup
 
 ### 0.1. Explanation of Computer and Hardware Requirements
