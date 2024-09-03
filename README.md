@@ -43,10 +43,6 @@ If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as 
   - [Explanation of Computer and Hardware Requirements](#explanation-of-computer-and-hardware-requirements)
   - [Software Installation and Dependencies: CasADi and ROS](#software-installation-and-dependencies-casadi-and-ros)
   - [Integrating ROS with DJI Matrice 100](#integrating-ros-with-dji-matrice-100)
-- [Background Explanation of the Code](#background-explanation-of-the-code)
-  - [Explanation of Various Files and Their Usage](#explanation-of-various-files-and-their-usage)
-  - [How to Tune the Controller?](#how-to-tune-the-controller)
-  - [Code Structure Overview](#code-structure-overview)
 - [NMPC: Simulation and Simulator Tests](#nmpc-simulation-and-simulator-tests)
   - [Testing out the Go_to_Point Trajectory](#testing-out-the-go_to_point-trajectory)
   - [Testing out the Spline/Circle_xy/Sinusoidal Trajectories](#testing-out-the-splinecircle_xysinusoidal-trajectories)
@@ -56,6 +52,10 @@ If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as 
   - [One Obstacle](#one-obstacle)
   - [Multiple Obstacles](#multiple-obstacles)
 - [NMPC: Simulation and Simulator Tests with Dynamic Obstacles](#nmpc-simulation-and-simulator-tests-with-dynamic-obstacles-working-at-the-moment-...)
+- [Background Explanation of the Code](#background-explanation-of-the-code)
+  - [Explanation of Various Files and Their Usage](#explanation-of-various-files-and-their-usage)
+  - [How to Tune the Controller?](#how-to-tune-the-controller)
+  - [Code Structure Overview](#code-structure-overview)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -125,84 +125,6 @@ Set Up ROS Nodes: Implement ROS nodes to handle communication between the NMPC c
 
 Configuration: Configure the launch files to ensure the correct initialization of parameters for the Matrice 100. This includes setting up topics for receiving GPS data, IMU readings, and other necessary inputs for the NMPC algorithm.
 
-## Background Explanation of the Code
-
-### Explanation of Various Files and Their Usage
-
-This will be clear as you try the envorment, here are some additional files I provide for future usage.
-
-   - `MPC_lidar_control_WALL_cvxgen_granso.cpp` : Implements the core NMPC algorithm, integrating LIDAR data for obstacle detection and avoidance. Its my old code using a linearized MPC with cvxgen to keep a distance to the wall this paper will never be published so I was like add it here why not? 
-   
-   - `lidar_python_code_skelet.py`: A Python script skeleton that processes LIDAR data to identify obstacles and calculate safe paths. This is for whoever want to continue my mission of dynamical obstacles, helper code.
-   
-   - `py_nmpc_dji100_DYNAMIC_OBSTACLE.py`: A Python script for dynamic obstacle avoidance, integrating the NMPC framework with real-time data from the DJI Matrice 100, still not finished also who ever wants to finish good skelet of what you need?
-
-### How to Tune the Controller?
-
-NOTE: Don't forget to adjust ----> self.k = 0.69  # Lift constant  # The more it goes up the lower the thrust <------ as it influences the thrust
-and makes a difference how the drone controls the altitude, by adjusting it we have the blue trajectory almost perfectly following the green one
-
-
-### Code Structure Overview
-
-#### Algorithm 1: NMPC Implementation for UAV
-
-1. **Initialize**:
-    - `x = MX.sym('x', 10)`
-    - `u = MX.sym('u', 4)`
-2. Define system dynamics `f(x, u)`
-3. Define objective function `L(x, u, x_ref)`
-4. **Set up optimization problem**:
-    - Initialize variables: `w`, `w_0`, `lbw`, `ubw`, `g`, `lbg`, `ubg`
-    - Set initial state: `X_k = MX.sym('X0', 10)`
-    - `w = [X_k]`, `lbw = [x_0]`, `ubw = [x_0]`, `w_0 = [x_0]`
-5. **For** `k = 0` to `N-1` **do**:
-    1. Define control: `U_k = MX.sym(f'Uk_{k}', 4)`
-    2. `w = w ∪ [U_k]`, `lbw = lbw ∪ [u_min]`, `ubw = ubw ∪ [u_max]`
-    3. `w_0 = w_0 ∪ [u_0]`
-    4. Integrate dynamics: `X_{k+1} = f(X_k, U_k)`
-    5. `w = w ∪ [X_{k+1}]`, `lbw = lbw ∪ [-∞]`, `ubw = ubw ∪ [∞]`
-    6. `w_0 = w_0 ∪ [0]`
-    7. Add equality constraint: `g = g ∪ [X_{k+1} - X_k]`
-    8. `lbg = lbg ∪ [0]`, `ubg = ubg ∪ [0]`
-6. Define NLP solver with IPOPT
-7. **Solve NMPC**:
-    - Update `w_0` with `x_k, u_{k-1}`
-    - `sol = solver(w_0, lbw, ubw, lbg, ubg)`
-    - Extract optimal control `u_opt`
-    - Update initial guesses for next iteration
-
-#### Algorithm 2: NMPC Controller Initialization and Operation
-
-1. **Import Libraries**: numpy, pandas, rospy, math, sys
-2. **Load Battery Data**:
-    - Define the path to the battery data file
-    - Read the battery data file into a pandas dataframe
-3. **Set Up Command-Line Arguments**:
-    - Create a parser for command-line options
-    - Add an option for selecting the controller type, default to "FLASH"
-    - Add an option for setting the drone's speed, default to 0.35
-    - Parse the command-line arguments
-4. **ROS Node Initialization**:
-    - `rospy.init_node("controller")`
-    - `rospy.subscriber("/dji_sdk/battery_state")`
-    - `ctrl_pub = rospy.Publisher("dji_sdk/flight_control_setpoint_generic", Joy)`
-5. **Callback Functions**:
-    - `def battery_callback(data):`
-        - Initialize `thrust_adjustment = get_thrust_based_on_battery(data.percentage)`
-        - `controller.update_thrust(thrust_adjustment)`
-    - `def timer_callback(event):`
-        - Enabling visualization in RViz
-        - `u_opt = controller.tick()`
-        - If `u_opt[0]`:
-            - `msg = Joy()`
-            - `msg.axes = [u_opt[1], u_opt[2], u_opt[0], u_opt[3]]`
-            - `ctrl_pub.publish(msg)`
-6. **Start ROS Spin**:
-    - `rospy.Timer(rospy.Duration(0.1), timer_callback)`
-    - `rospy.spin()`
-
-This a life tip you can use as you wish, warmest reccomendation to use MX instead of SX in problems complex as this, since otherwise you will have issues to use jacobian and similar stuff with matrices (also look at the documentation of CasADi, not on the webpage but inside the code - this might be a game changer at some point).
 
 ## NMPC: Simulation and Simulator Tests
 
@@ -659,6 +581,84 @@ python3 pycontroller.py --trajectory_type long_spline --controller MULTI_OBSTACL
 
 ## NMPC: Simulation and Simulator Tests with DYNAMIC OBSTACLES - working at the moment...
 
+
+## Background Explanation of the Code
+
+### Explanation of Various Files and Their Usage
+
+This will be clear as you try the envorment, here are some additional files I provide for future usage.
+
+   - `MPC_lidar_control_WALL_cvxgen_granso.cpp` : Implements the core NMPC algorithm, integrating LIDAR data for obstacle detection and avoidance. Its my old code using a linearized MPC with cvxgen to keep a distance to the wall this paper will never be published so I was like add it here why not? 
+   
+   - `lidar_python_code_skelet.py`: A Python script skeleton that processes LIDAR data to identify obstacles and calculate safe paths. This is for whoever want to continue my mission of dynamical obstacles, helper code.
+   
+   - `py_nmpc_dji100_DYNAMIC_OBSTACLE.py`: A Python script for dynamic obstacle avoidance, integrating the NMPC framework with real-time data from the DJI Matrice 100, still not finished also who ever wants to finish good skelet of what you need?
+
+### How to Tune the Controller?
+
+NOTE: Don't forget to adjust ----> self.k = 0.69  # Lift constant  # The more it goes up the lower the thrust <------ as it influences the thrust
+and makes a difference how the drone controls the altitude, by adjusting it we have the blue trajectory almost perfectly following the green one
+
+### Code Structure Overview
+
+#### Algorithm 1: NMPC Implementation for UAV
+
+1. **Initialize**:
+    - `x = MX.sym('x', 10)`
+    - `u = MX.sym('u', 4)`
+2. Define system dynamics `f(x, u)`
+3. Define objective function `L(x, u, x_ref)`
+4. **Set up optimization problem**:
+    - Initialize variables: `w`, `w_0`, `lbw`, `ubw`, `g`, `lbg`, `ubg`
+    - Set initial state: `X_k = MX.sym('X0', 10)`
+    - `w = [X_k]`, `lbw = [x_0]`, `ubw = [x_0]`, `w_0 = [x_0]`
+5. **For** `k = 0` to `N-1` **do**:
+    1. Define control: `U_k = MX.sym(f'Uk_{k}', 4)`
+    2. `w = w ∪ [U_k]`, `lbw = lbw ∪ [u_min]`, `ubw = ubw ∪ [u_max]`
+    3. `w_0 = w_0 ∪ [u_0]`
+    4. Integrate dynamics: `X_{k+1} = f(X_k, U_k)`
+    5. `w = w ∪ [X_{k+1}]`, `lbw = lbw ∪ [-∞]`, `ubw = ubw ∪ [∞]`
+    6. `w_0 = w_0 ∪ [0]`
+    7. Add equality constraint: `g = g ∪ [X_{k+1} - X_k]`
+    8. `lbg = lbg ∪ [0]`, `ubg = ubg ∪ [0]`
+6. Define NLP solver with IPOPT
+7. **Solve NMPC**:
+    - Update `w_0` with `x_k, u_{k-1}`
+    - `sol = solver(w_0, lbw, ubw, lbg, ubg)`
+    - Extract optimal control `u_opt`
+    - Update initial guesses for next iteration
+
+#### Algorithm 2: NMPC Controller Initialization and Operation
+
+1. **Import Libraries**: numpy, pandas, rospy, math, sys
+2. **Load Battery Data**:
+    - Define the path to the battery data file
+    - Read the battery data file into a pandas dataframe
+3. **Set Up Command-Line Arguments**:
+    - Create a parser for command-line options
+    - Add an option for selecting the controller type, default to "FLASH"
+    - Add an option for setting the drone's speed, default to 0.35
+    - Parse the command-line arguments
+4. **ROS Node Initialization**:
+    - `rospy.init_node("controller")`
+    - `rospy.subscriber("/dji_sdk/battery_state")`
+    - `ctrl_pub = rospy.Publisher("dji_sdk/flight_control_setpoint_generic", Joy)`
+5. **Callback Functions**:
+    - `def battery_callback(data):`
+        - Initialize `thrust_adjustment = get_thrust_based_on_battery(data.percentage)`
+        - `controller.update_thrust(thrust_adjustment)`
+    - `def timer_callback(event):`
+        - Enabling visualization in RViz
+        - `u_opt = controller.tick()`
+        - If `u_opt[0]`:
+            - `msg = Joy()`
+            - `msg.axes = [u_opt[1], u_opt[2], u_opt[0], u_opt[3]]`
+            - `ctrl_pub.publish(msg)`
+6. **Start ROS Spin**:
+    - `rospy.Timer(rospy.Duration(0.1), timer_callback)`
+    - `rospy.spin()`
+
+This a life tip you can use as you wish, warmest reccomendation to use MX instead of SX in problems complex as this, since otherwise you will have issues to use jacobian and similar stuff with matrices (also look at the documentation of CasADi, not on the webpage but inside the code - this might be a game changer at some point).
 
 ## License
 This project is licensed under the MIT License. You can view the full license [here](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/LICENSE.txt).
