@@ -571,6 +571,11 @@ python3 py_nmpc_dji100_MULTI_OBSTACLES.py --trajectory_type long_spline --use_nm
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/obstacles_1.png)
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/obstacles_1a.png)
 
+<p align="center">
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/obstacles_1.png" alt="First Image" width="400" style="margin-right: 10px;" />
+  <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/obstacles_1a.png" alt="Second Image" width="400" />
+</p>
+
 Control Inputs: Thrust [%], Roll [rad], Pitch [rad], Yaw Rate [rad/s]:
 
 ![Alt text](https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/obstacles_2.png)
