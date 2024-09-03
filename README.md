@@ -2,7 +2,7 @@
 
 Welcome to **NMPC_Flash_Multi_Obstacle**: a robust framework for Nonlinear Model Predictive Control (NMPC) tailored for autonomous navigation of DJI Matrice 100 and other UAVs equipped with similar black-box systems. Central to this framework is its real-time optimization capability, enabled by the CasADi library and ROS topics and nodes, which efficiently solves the NMPC problem under tight computational constraints. This allows for adaptive and agile navigation even in dynamic environments. Our approach supports a wide range of trajectory types and obstacle configurations, ensuring flexibility and robustness in various testing scenarios.
 
-Constact here if you have any questions [lara.laban@control.lth.se](mailto:lara.laban@control.lth.se) or [LinkedIn](https://www.linkedin.com/in/lara-laban-571804212/).
+Constact here if you have any questions [email Lara](mailto:lara.laban@control.lth.se) or [LinkedIn](https://www.linkedin.com/in/lara-laban-571804212/).
 
 <p align="center">
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/granso_first.gif" alt="First GIF" width="400" style="margin-right: 10px;" />
