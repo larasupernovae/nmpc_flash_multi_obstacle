@@ -21,22 +21,23 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
 
 **Authors**: Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
 
-#If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
-#
-# - [Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments], Lara Laban, Mariusz #Wzorek, Piotr Rudol, Tommy Persson, Björn Olofsson, Yiannis Karayiannidis, Rolf Johansson, IEEE International Conference on Robotics and Automation 
-#(ICRA) 2025
+<!-- 
+If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
 
-#```bash
-#@inproceedings{TBA,
-#  title={Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments},
-#  author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy and Olofsson, Björn and Karayiannidis, Yiannis and Johansson, Rolf},
-#  booktitle={Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
-#  year={2025},
-#  pages={TBA},
-#  publisher={IEEE},
-#  status={TBA}
-#}
-#```
+ - [Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, Björn Olofsson, Yiannis Karayiannidis, Rolf Johansson, IEEE International Conference on Robotics and Automation (ICRA) 2025
+
+```bash
+@inproceedings{TBA,
+  title={Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments},
+  author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy and Olofsson, Björn and Karayiannidis, Yiannis and Johansson, Rolf},
+  booktitle={Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2025},
+  pages={TBA},
+  publisher={IEEE},
+  status={TBA}
+}
+```
+-->
 
 ## Table of Contents
 
