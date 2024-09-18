@@ -24,17 +24,15 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
 <!-- 
 If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
 
- - [Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, Björn Olofsson, Yiannis Karayiannidis, Rolf Johansson, IEEE International Conference on Robotics and Automation (ICRA) 2025
+ - [Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, Björn Olofsson, Yiannis Karayiannidis, Rolf Johansson, arXiv, 2024
 
 ```bash
-@inproceedings{TBA,
-  title={Enhanced Autonomous UAV: Custom Non-linear Model Predictive Control for Robust Obstacle Avoidance in Diverse Environments},
+@article{Laban2024,
+  title={Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments},
   author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy and Olofsson, Björn and Karayiannidis, Yiannis and Johansson, Rolf},
-  booktitle={Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
-  year={2025},
-  pages={TBA},
-  publisher={IEEE},
-  status={TBA}
+  journal={arXiv preprint arXiv:TBA},
+  year={2024},
+  note={Accessed: September 18, 2024}
 }
 ```
 -->
