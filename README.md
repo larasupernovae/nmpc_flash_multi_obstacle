@@ -17,7 +17,9 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/sixth.gif" alt="Sixth GIF" width="400" />
 </p>
 
-**Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg)](https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5)
+**Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. 
+
+[![Watch Playlist](https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg)](https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5)
 
 **Authors**: Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
 
