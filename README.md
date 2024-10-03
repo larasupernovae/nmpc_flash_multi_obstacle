@@ -17,14 +17,6 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/sixth.gif" alt="Sixth GIF" width="400" />
 </p>
 
-**Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. 
-
-[![Watch Playlist](https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg)](https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5)
-<a href="https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5">
-  <img src="https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg" alt="Watch Playlist" width="400">
-</a>
-
-
 **Authors**: Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
 
 If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
@@ -38,7 +30,12 @@ If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as 
   note={Accessed: October 4, 2024}
 }
 ```
-Please consider starring ⭐ this repository if you find it helpful! We put great effort into developing it 😁😁.
+Please consider starring ⭐ this repository if you find it helpful! We put great effort into developing it 😎.
+
+**Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. 
+<a href="https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5">
+  <img src="https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg" alt="Watch Playlist" width="400">
+</a>
 
 ## Table of Contents
 
