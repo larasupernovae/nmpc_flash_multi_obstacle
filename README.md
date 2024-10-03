@@ -20,12 +20,14 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
 **Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. 
 
 [![Watch Playlist](https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg)](https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5)
+<a href="https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5">
+  <img src="https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg" alt="Watch Playlist" width="400">
+</a>
+
 
 **Authors**: Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
 
 If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
-
- - [Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, arXiv, 2024
 
 ```bash
 @article{Laban2024,
