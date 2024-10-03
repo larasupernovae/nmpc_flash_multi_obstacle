@@ -17,25 +17,24 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
   <img src="https://github.com/larasupernovae/nmpc_flash_multi_obstacle/raw/main/src/images_for_README/sixth.gif" alt="Sixth GIF" width="400" />
 </p>
 
-**Videos** Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO/0.jpg)](https://www.youtube.com/playlist?list=PLumVztiVR9hmHMMD6MF9ELFhX6l3DU6vO)
+**Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. [![Watch Playlist](https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg)](https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5)
 
 **Authors**: Tommy Persson and Lara Laban, from [LiU](https://liu.se/en/), [WARA-PS](https://portal.waraps.org/page/home/) and [LU](https://www.lunduniversity.lu.se/).
 
-<!-- 
 If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
 
- - [Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, Björn Olofsson, Yiannis Karayiannidis, Rolf Johansson, arXiv, 2024
+ - [Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments], Lara Laban, Mariusz Wzorek, Piotr Rudol, Tommy Persson, arXiv, 2024
 
 ```bash
 @article{Laban2024,
   title={Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments},
-  author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy and Olofsson, Björn and Karayiannidis, Yiannis and Johansson, Rolf},
+  author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy},
   journal={arXiv preprint arXiv:TBA},
   year={2024},
-  note={Accessed: September 18, 2024}
+  note={Accessed: October 4, 2024}
 }
 ```
--->
+Please consider starring ⭐ this repository if you find it helpful! We put great effort into developing it 😁😁.
 
 ## Table of Contents
 
