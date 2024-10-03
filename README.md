@@ -33,6 +33,7 @@ If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as 
 Please consider starring ⭐ this repository if you find it helpful! We put great effort into developing it 😎.
 
 **Videos**: Explore our demo showcasing the NMPC_Flash_Multi_Obstacle framework in action at Gränsö Slott, Sweden. 
+
 <a href="https://youtu.be/ZWU3_VjAyFk?si=FopvJltSP-CVnde5">
   <img src="https://img.youtube.com/vi/ZWU3_VjAyFk/0.jpg" alt="Watch Playlist" width="400">
 </a>
