@@ -25,7 +25,7 @@ If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as 
 @article{Laban2024,
   title={Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments},
   author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy},
-  journal={arXiv preprint arXiv:TBA},
+  journal={arXiv preprint arXiv:https://arxiv.org/abs/2410.02732},
   year={2024},
   note={Accessed: October 4, 2024}
 }
