@@ -22,12 +22,14 @@ Constact here if you have any questions [email Lara](mailto:lara.laban@control.l
 If you use NMPC_Flash_Multi_Obstacle in your research, please cite our paper as follows:
 
 ```bash
-@article{Laban2024,
-  title={Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments},
-  author={Laban, Lara and Wzorek, Mariusz and Rudol, Piotr and Persson, Tommy},
-  journal={arXiv preprint arXiv:https://arxiv.org/abs/2410.02732},
-  year={2024},
-  note={Accessed: October 4, 2024}
+@misc{laban2024customnonlinearmodelpredictive,
+      title={Custom Non-Linear Model Predictive Control for Obstacle Avoidance in Indoor and Outdoor Environments}, 
+      author={Lara Laban and Mariusz Wzorek and Piotr Rudol and Tommy Persson},
+      year={2024},
+      eprint={2410.02732},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2410.02732}, 
 }
 ```
 Please consider starring ⭐ this repository if you find it helpful! We put great effort into developing it 😎.
